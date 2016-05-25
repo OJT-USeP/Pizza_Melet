@@ -12,8 +12,8 @@ class ContactForm extends Model
 
 	public function get_name($e)
 		{
-			
-			return $e;
+
+			return $e->result_array();
 		}
 
 }

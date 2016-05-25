@@ -35,17 +35,14 @@ function btn_click2()
 
 function btn_click2()
 	{
-		$.get(
-			"index.php?r=pizza/request",
-			{id:data},
+		$.post(
+			"index.php?r=pizza/me",
 			function success(data)
 				{
-					$.each(data ,function(key,value){
-						console.log(value.product+" "+value.quantity);
-
-					});
+					console.log(data);
 				}
 			);
 	}	
 	
+
 
