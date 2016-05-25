@@ -45,6 +45,9 @@ use Yii;
  */
 abstract class Application extends Module
 {
+
+   
+
     /**
      * @event Event an event raised before the application starts to handle a request.
      */
@@ -255,6 +258,7 @@ abstract class Application extends Module
             } elseif (is_array($config['components'][$id]) && !isset($config['components'][$id]['class'])) {
                 $config['components'][$id]['class'] = $component['class'];
             }
+
         }
     }
 
