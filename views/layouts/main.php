@@ -5,7 +5,7 @@ use yii\helpers\Url;
 /* @var $content string */
 $this->registerJsFile('@web/js/jquery.js');
 $this->registerJsFile('@web/js/script.js');
-
+$this->registerJsFile('@web/js/script1.js');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -16,15 +16,13 @@ $this->registerJsFile('@web/js/script.js');
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body onload="display_categories()">
 <?php $this->beginBody() ?>
     <header>My Company</header>
 	
 
-    <?= $content ?>
-	
-		<button onclick="btn_click()">Click This one</button>
-        <button onclick="btn_click2()">Click This two</button>
+    <?= $content ?>	
+    <button onclick="display_categories()">Clcik</button>
     <footer>&copy; 2014 by My Company</footer>
 <?php $this->endBody() ?>
 </body>
