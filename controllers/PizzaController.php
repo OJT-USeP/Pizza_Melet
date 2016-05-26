@@ -73,5 +73,14 @@ class PizzaController extends Controller
 		\Yii::$app->response->format = 'json';
 		return $data;
 	}
+
+	public function actionItem($e)
+	{
+		$model=new CategoriesForm();
+		$data=$model->get_categories_item($e);
+		\Yii::$app->response->format='json';
+	
+		return $data;
+	}
 }
 ?>
