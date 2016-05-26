@@ -5,7 +5,7 @@ use yii\helpers\Url;
 /* @var $content string */
 $this->registerJsFile('@web/js/jquery.js');
 $this->registerJsFile('@web/js/script.js');
-$this->registerJsFile('@web/js/script1.js');
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

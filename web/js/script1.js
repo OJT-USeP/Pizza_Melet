@@ -23,10 +23,10 @@ $(document).ready(function(){
 				"index.php?r=pizza/item&e="+this.id,
 				function success(data)
 					{
-						//$("#display").html("");
-						//$("#display").append('<p>'+this.innerHTML+'</p>');
-
-						console.log(data);
+						$("#display").html("");
+						$.each(data,function(key,value){
+							$("#display").append('<img src="images/'+value.id+'.png">');
+						});
 					}
 				);
 			

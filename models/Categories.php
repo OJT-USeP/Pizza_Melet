@@ -5,9 +5,5 @@
 
 	class Categories extends ActiveRecord	
 		{
-
 		}
-
-
-
 ?>

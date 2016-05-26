@@ -65,20 +65,10 @@ function display_categories()
 		);
 	*/
 	window.location="index.php?r=pizza/view";
-	tt();
+
 }
 
-function tt()
-	{
-		$.get(
-		"index.php?r=pizza/me",
-		function success(data)
-			{
-				console.log(data);
-			}
-
-		);
-	}
+/*
 window.onload = function() {
     // Check if localStorage is available (IE8+) and make sure that the visited flag is not already set.
     if(typeof window.localStorage !== "undefined" && !localStorage.getItem('visited')) {
@@ -89,3 +79,4 @@ window.onload = function() {
          alert("Hello my friend. This is your first visit.");   
     }
 }
+*/

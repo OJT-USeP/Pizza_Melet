@@ -17,5 +17,6 @@ class CategoriesForm extends Model
 			$categories_item=Item::find()->where(['category_id'=>$e])->all();
 			return $categories_item;
 		}
+		
 }
 ?>

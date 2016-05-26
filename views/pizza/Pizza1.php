@@ -16,8 +16,8 @@ $this->registerCssFile('@web/css/style.css');
 			</ul>
 		</div>
 	</div>
-
+	
 	<div id="display">
-		
+
 	</div>
 </body>
