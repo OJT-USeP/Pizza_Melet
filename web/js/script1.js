@@ -12,8 +12,10 @@ function display()
 				}
 			);
 	}
+
 function submit_to_cart(e)
 	{
+		if(data_list.length!=0){
 					$.post(
 						"index.php?r=pizza/add",
 						{'data':data_list},
@@ -24,6 +26,11 @@ function submit_to_cart(e)
 								console.log("Total Payment: "+data.total_amount);
 							}
 						);
+				}
+				else
+				{
+					alert("You have no Order in List!");
+				}
 	}
 
 function add_to_cart(e)
@@ -53,7 +60,6 @@ $(document).ready(function(){
 
 							if(value.name_img!=null)
 							{
-								
 								var element='<div class="display-product " id="'+value.id+'">';
 									element+='<img src="'+value.name_img+'" id="img_'+value.id+'"/>';
 									element+='<div class="add-to-cart" id="cart_'+value.id+'">';
@@ -82,7 +88,5 @@ $(document).ready(function(){
 		$("#img_"+this.id).css("display","block");
 		$("#cart_"+this.id).css("display","none");
 	});
-	
-
 });
 

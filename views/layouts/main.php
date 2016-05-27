@@ -4,8 +4,8 @@ use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $content string */
 $this->registerJsFile('@web/js/jquery.js');
-$this->registerJsFile('@web/js/script.js');
-
+$this->registerJsFile('@web/js/script1.js');
+$this->registerCssFile('@web/css/style.css');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -16,14 +16,11 @@ $this->registerJsFile('@web/js/script.js');
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body onload="display_categories()">
+<body >
 <?php $this->beginBody() ?>
-    <header>My Company</header>
-	
 
     <?= $content ?>	
-    <button onclick="display_categories()">Clcik</button>
-    <footer>&copy; 2014 by My Company</footer>
+ 
 <?php $this->endBody() ?>
 </body>
 </html>

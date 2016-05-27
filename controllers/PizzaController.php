@@ -17,12 +17,8 @@ class PizzaController extends Controller
 
 		 public function actionIndex()
 			{
-				    	return $this->render('index');
-			}
-		
-		public function actionView()
-			{
-				return $this->renderAjax('pizza1');
+					//$session=Yii::$app->session;
+				    	return $this->render('pizza1');
 			}
 
 		public function actionCategories()	
