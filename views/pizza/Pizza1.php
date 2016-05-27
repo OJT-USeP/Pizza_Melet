@@ -18,6 +18,9 @@ $this->registerCssFile('@web/css/style.css');
 	</div>
 	
 	<div id="display">
+		
 
+		
 	</div>
+	<button onclick="submit_to_cart()">Check Out</button>
 </body>

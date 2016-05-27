@@ -39,3 +39,38 @@ li
 	cursor: pointer;
 	box-shadow: 1px 1px 1px black;
 }
+#display
+{
+	margin: 25px auto;
+	min-width:500px;
+	max-width: 1000px;
+	display: flex;
+}
+.display-product
+{	
+	flex-grow:1;
+	height: 250px;
+	width: 200px;
+	background:black;
+	margin:5px;
+	display: flex;
+}
+#img_display
+{
+	flex: 1;
+	padding: 0;
+	margin:0;
+}	
+.add-to-cart
+{
+	position: relative;
+	background-color: yellow;
+	flex: 1;
+	z-index: 10000;
+	display: none;
+	text-align: center;
+}
+.input_cart
+{
+	display: none;
+}
